@@ -1,0 +1,33 @@
+<button class="btn btn-primary" ng-click="openL1()">الاستماع الدقيقي</button>
+<div modal="shouldBeOpenL1" close="closeL1()" options="opts">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close pull-left" ng-click="closeL1()">&times;</button>
+				<h3>الاستماع الدقيقي</h3>
+			</div>
+			<div class="modal-body">
+				<div class="flex-video widescreen" style="margin: 0 auto">
+					<iframe allowfullscreen="" src="//www.youtube.com/embed/21OXQ4m1-Bo" frameborder="0"iframe>
+				</div>
+				<div>
+					<form class="form-inline">
+						<p class="ara"><span edit-in-place="answer1"></span> <span edit-in-place="answer2"></span> يا ولاد عمومنا<br/>
+							اتفضلوا <span edit-in-place="answer3"></span><br/>
+							شو بتحبوا نضيفكم؟ دم عربي ولا دموع من عيوننا؟ <br/>
+							بعتقد هيك تأملوا نستقبلهن، هيك تعقـّدوا لما اتدركموا على غلطتهن<br/><br/>
+							هيك لبسنا الكوفية<br/>
+							<span edit-in-place="answer4"></span> و<span edit-in-place="answer5"></span><br/>
+							صاروا كلاب الزمان يلبسوها كموضة<br/>
+							مهمن تفننوا فيها<br/>
+							مهما غيروا بلونها<br/>
+							<span edit-in-place="answer6"></span> <span edit-in-place="answer7"></span>, بتضلها <span edit-in-place="answer8"></span><br/>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-warning cancel" ng-click="closeL1()">Close</button><a class="btn btn-success" href="/modules/mashrou3leila/Answer Key LISTENING.pdf" target="blank" tooltip="حل الاستماع"><span class="glyphicon glyphicon-check"></span></a>
+			</div>
+		</div>
+	</div>
+</div>

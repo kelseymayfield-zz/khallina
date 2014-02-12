@@ -1,0 +1,38 @@
+{
+	"title": "مسخّن",
+	"id": "musakhan",
+	"intro": "Musakhan, the national dish of Palestine, is a traditional dish composed of roasted chicken that is baked with onions, spices and fried pines nuts, then served on taboon bread. It is simple to make and even more delicious to eat--making it one of the most popular Arabic Palestinian dishes. Let’s explore the background of Musakhan and cooking in Palestine!",
+	"banner": "musakhan/Musakhan Banner.png",
+	"advanced": {
+		"preactivity": {
+			"html": "modules/musakhan/preactivity.html"
+		},
+		"video1": "//youtube.com/embed/9tYnAdzwBeY",
+		"article1": {
+			"instructions": "المسخـّن طبخة فلسطينية مشهورة. خلينا نقرأ الوصفة في كتاب طبخ بعنوان \"مطبخ منال العالم\" وبعدين نشوف شيف منال تطبخ الطبق:",
+			"url": "modules/musakhan/musakhan recipe.pdf",
+			"notanarticle": "true"
+		},
+		"video3": {
+		 	"url": "//youtube.com/embed/GrjD-5QCOOk"
+		 },
+		"activity3": "modules/musakhan/dragdrop.html",
+		"finalActivity": {
+			"instructions": "قدّموا طريقة تحضير وجبة لذيذة تحبونها من خلال كتابة وصفة أو من خلال تسجيل فيديو لزملائكم. حاولوا تقليد أسلوب كتاب الطبخ الذي رأيناه، أو أسلوب شيف مشهور تحبونة."
+		},
+		"videos": [
+			{
+				"url": "//youtube.com/embed/BVLgioxsbIg",
+				"id": "BVLgioxsbIg"
+			},
+			{
+				"url": "//youtube.com/embed/_yzQdzoyRp0",
+				"id": "_yzQdzoyRp0"
+			},
+			{
+				"url": "//youtube.com/embed/Pv7WZckt538",
+				"id": "Pv7WZckt538"
+			}
+		]
+	}
+}

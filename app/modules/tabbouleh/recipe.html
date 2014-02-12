@@ -1,0 +1,57 @@
+<div ng-controller="recipeCtrl">
+	<h2>خلينا نتعلّم المكوّنات</h2>
+	<hr/>
+	<table class="table table-bordered">
+		<tr>
+			<td>1</td>
+			<td class="ara">بندورة مفرومة</td>
+				<td><div class="btn btn-draggable" data-drop="false" data-jqyoui-options ng-model="list2" jqyoui-draggable ng-hide="!list2.title">{{list2.title}}</div>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td class="ara">بقدونس مفروم</td>
+			<td>Olive Oil</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td class="ara">برغل</td>
+			<td>Green Mint</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td class="ara">بقدونس مفروم</td>
+			<td>Olive Oil</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td class="ara">بقدونس مفروم</td>
+			<td>Olive Oil</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td class="ara">بقدونس مفروم</td>
+			<td>Olive Oil</td>
+		</tr>
+	</table>
+
+	<table class="table table-bordered">
+		<tr>
+			<td class="ara">بندورة مفرومة</td>
+			<td class="ara">بقدونس مفروم</td>
+			<td class="ara">برغل</td>
+			<td class="ara">ملح + فلفل</td>
+			<td class="ara">نعنع أخضر</td>
+			<td class="ara">بصل مفروم</td>
+			<td class="ara">ليمون</td>
+			<td class="ara">زيت الزيتون</td>
+		</tr>
+		<tr>
+			<td ng-repeat="item in list1" data-drop="true" ng-model="list1" jqyoui-droppable="{index: {{$index}}, onDrop:'dropCallback(item.id, $index)'}">
+				<button class="btn btn-droppable btn-draggable" ng-class="{!item.drag:btn-success}" data-drag="{{item.drag}}" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{index: {{$index}},animate:true}">
+					{{item.title}}
+				</button>
+			</td>
+		</tr>
+	</table>
+</div>

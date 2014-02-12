@@ -1,0 +1,29 @@
+<script src="modules/bassemyoussef/dialect.js"></script>
+
+<h4>في حلقة "البرنامج" اللي شفناها باسم يوسف بيستخدم عبارات كتيرة متعلقة بالمشاعر والأحاسيس. أنهي من العبارات بتدلّ على إنو فيه إحساس إيجابي، وأنهي بتدلّ على إنو فيه إحساس سلبي؟</h4>
+<br/>
+<div ng-controller="DialectCtrl">
+	<button class="btn btn-default" ng-click="subtract()" ng-disabled="rightDisable"><span class="glyphicon glyphicon-chevron-right"></span></button>
+		<div class="btn btn-default bubble" ng-repeat="item in list1" ng-hide="$index!=count" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{index: {{$index}}}" ng-hide="!item.title">{{item.title}}</div>
+	<button class="btn btn-default" ng-click="add()" ng-disabled="leftDisable"><span class="glyphicon glyphicon-chevron-left"></span></button>
+	<br/>
+	<br/>
+	<tabset>
+		<tab heading="إحساس إجابي">
+			<div class="thumbnail" data-drop="true" data-jqyoui-options ng-model='pos' jqyoui-droppable="{multiple:true}">
+				<h3>أحساس إجابي</h3>
+				<div class="caption">
+					<div class="btn btn-info" ng-repeat="item in pos" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="pos" jqyoui-draggable="{animate:true}">{{item.title}}</div>
+				</div>
+			</div>
+		</tab>
+		<tab heading="إحساس سلبي">
+			<div class="thumbnail" data-drop="true" data-jqyoui-options ng-model='neg' jqyoui-droppable="{multiple:true}">
+				<h3>أحساس سلبي</h3>
+				<div class="caption">
+					<div class="btn btn-info" ng-repeat="item in neg" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="neg" jqyoui-draggable="{animate:true}">{{item.title}}</div>
+				</div>
+			</div>
+		</tab>
+	</tabset>
+</div>

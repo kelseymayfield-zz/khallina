@@ -1,0 +1,252 @@
+<div class="container" role="main">
+	<div class="banner" ng-class="{expanded: showIntro}" ng-style="{'background-image':'url(/modules/'+lesson.banner+')'}">
+		<div class="wrapper">
+			<span class="title">{{lesson.title}}</span>
+			<button class="btn" ng-init="showIntro = false" ng-click="showIntro = true" ng-show="!showIntro"><span class="glyphicon glyphicon-chevron-down"></span> اقرأ أكثر</button>
+			<button class="btn" ng-click="showIntro = false" ng-show="showIntro"><span class="glyphicon glyphicon-chevron-up"></span> أقلّ</button>
+		</div>
+		<div class="intro eng" ng-show="showIntro">
+			{{lesson.intro}}
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-3 col-sm-12 col-xs-12">
+			<!-- Sidebar content -->
+			<nav id="navbar" class="navbar ara">
+				<ul class="nav nav-pills nav-stacked nav-green">
+					<li><a ng-href="{{module.vocabMap}}" target="blank" ng-init="voc='مفردات'" ng-mouseover="voc='Vocabulary'" ng-mouseleave="voc='مفردات'">{{voc}}</a></li>
+					<li><a pageslide="left" ng-init="gram='قواعد'" ng-mouseover="gram='Grammar'" ng-mouseleave="gram='قواعد'" ps-speed="0.5" href="#grammarslide">{{gram}}</a></li>
+					<li><a pageslide="left" href="#dialectslide" ng-init="dialect='عامية'" ng-mouseover="dialect='Dialect'" ng-mouseleave="dialect='عامية'" ps-speed="0.5">{{dialect}}</a></li>
+				</ul>
+			</nav>
+
+			<div id="grammarslide" ng-controller="PanelCtrl" style="display:none">
+				<div data-spy="scroll" data-target="#navbar" class="sidebar-data">
+					<br/>
+					<a class="button close" id="grammarslide-close" aria-hidden="true">&times;</a>
+					<br/>
+					<h2 id="grammar">القواعد</h2>
+					<div ng-include="module.grammar"></div>
+				</div>
+			</div>
+			<div id="vocabslide" ng-controller="PanelCtrl" style="display:none">
+				<div data-spy="scroll" data-target="#navbar" class="sidebar-data">
+					<br/>
+					<a class="button close" id="vocabslide-close" aria-hidden="true">&times;</a>
+					<br/>
+					<h2 id="vocab"><abbr title="Vocabulary Map">خريطة المفردات</abbr></h2>
+					<div>
+						<img id="map" ng-src="{{module.vocabMap}}"></img>
+					</div>
+				</div>
+			</div>
+			<div id="dialectslide" ng-controller="PanelCtrl" style="display:none">
+				<div data-spy="scroll" data-target="#navbar" class="sidebar-data">
+					<br/>
+					<a class="button close" id="dialectslide-close" aria-hidden="true">&times;</a>
+					<br/>
+					<h2 id="dialect">خلينا نعرف العامية</h2>
+					<div ng-include="module.dialect"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9 col-sm-12 col-xs-12" >
+			<div id="content">
+				<div>
+				<!-- Body content -->
+				<div ng-show="module.preactivity">
+					<h3 ng-show="module.preactivity.title">"{{module.preactivity.title}}"</h3>
+					<br />
+					<div class="activity ara" ng-show="module.preactivity.instructions"><p>
+						{{module.preactivity.instructions}}
+					</p></div>
+					<div class="highlight ara" ng-show="module.preactivity.addon">
+						{{module.preactivity.addon}}
+					</div>
+					<div ng-include="module.preactivity.html"></div>
+					<hr/>
+				</div>
+
+				<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+					<center>
+					<iframe allowfullscreen="" ng-src="{{video1URL}}" frameborder="0"></iframe>
+				</center>
+				</div>
+				<div class="row">
+					<br />
+					<center>
+						<button class="btn btn-lg btn-default" ng-click="open()" ng-show="module.words">خلينا نقرأ الكلمات</button>
+					</center>
+				</div>
+				<div ng-include="module.wordsHtml"></div>
+				<div ng-show="module.activity1">
+					<br />
+					<div class="activity ara"><p>
+						{{module.activity1.instructions}}
+					</p></div>
+					<div class="highlight">
+							300 كلمة
+					</div>
+				</div>
+				<div ng-show="module.video2">
+					<br />
+					<h2>{{module.video2.title}}</h2>
+					<hr />
+					<div class="flex-video widescreen" style="margin: 0 auto">
+						<iframe allowfullscreen="" ng-src="{{video2URL}}" frameborder="0"></iframe>
+					</div>
+					<br/>
+					<h3>{{module.video2.after}}</h3>
+				</div>
+				<div ng-include="module.html"></div>
+				<div ng-show="module.article1">
+					<br />
+					<h2 ng-hide="module.article1.notanarticle">خلينا نقرأ المقالة</h2>
+					<hr />
+					<h4 ng-show="module.article1.instructions">{{module.article1.instructions}}</h4><div ng-include="module.article1.htmlinstructions"></div>
+					<div class="well">
+						<h3>{{module.article1.title}} <small ng-show="module.article1.author">ل{{module.article1.author}}</small></h3>
+						<div class="flex-video" ng-show="module.article1.url">
+							<iframe ng-src="{{article1URL}}" frameborder="0"></iframe>
+						</div>
+						<div ng-include="module.article1.html"></div>
+						<div class="btn-group">
+							<a class="btn" ng-href="{{module.article1.url}}" download="Article1.pdf" id="download_button"><span class="glyphicon glyphicon-download"></span> تحميل الـPDF</a>
+							<a class="btn" ng-href="{{module.article1.source}}" target="blank"><span class="glyphicon glyphicon-link"></span></a>
+						</div>
+					</div>
+				</div>
+				<div ng-show="module.article2">
+					<h4>{{module.article2.instructions}}</h4>
+					<div class="well">
+						<h3>{{module.article2.title}} <small>ل{{module.article2.author}}</small></h3>
+						<div class="flex-video">
+							<iframe ng-src="{{article2URL}}" frameborder="0"></iframe>
+						</div>
+						<div class="btn-group">
+							<a class="btn" ng-href="{{module.article2.url}}" download="Article2.pdf" id="download_button"><span class="glyphicon glyphicon-download"></span></a>
+							<a class="btn" ng-href="{{module.article2.source}}" target="blank"><span class="glyphicon glyphicon-link"></span></a>
+						</div>
+					</div>
+				</div>
+				<div ng-include="module.activity2"></div>
+				<br />
+				<div ng-show="module.articleQuestions">
+					<div class="questions">
+						<p>
+							<ol class="ara2">
+								<li ng-repeat="q in articleQuestions"><div ng-bind-html="q"></div></li>
+							</ol>
+						</p>
+					</div>
+					<div class="highlight">
+						<a class="btn-default btn" ng-href="{{module.article1.questionUrl}}" download="Article Questions.pdf"><span class="glyphicon glyphicon-download"></span> تحميل الـPDF</a>
+					</div>
+				</div>
+				<br />
+				<h2>{{module.video3.title}}</h2>
+				<hr />
+				<div class="flex-video widescreen" style="margin: 0 auto">
+					<iframe allowfullscreen="" ng-src="{{video3URL}}" frameborder="0"></iframe>
+				</div>
+				<br />
+				<div class="questions" ng-show="module.video3.questions">
+					<p>
+						<ol class="ara2">
+							<li ng-repeat="question in video3Questions"><div ng-bind-html="question"></div></li>
+							<li ng-show="module.listening">استمعوا مرة أخرى وأكملوا الفراغات: <button class="btn btn-primary" ng-click="openL1()">الاستماع الدقيق</button></li>
+						</ol>
+					</p>
+				</div>
+				<div class="highlight" ng-show="module.listening">
+					<div class="btn-group">
+						<a class="btn btn-success" ng-href="{{listeningSolutions}}" target="blank" tooltip="حل الاستماع"><span class="glyphicon glyphicon-check"></span></a>
+						<a class="btn btn-primary" href="{{listeningQuestions}}" tooltip="الأسئلة" target="blank"><span class="glyphicon glyphicon-link"></span></a>
+					</div>
+				</div>
+				</div>
+				<div ng-include="module.activity3"></div>
+				<div ng-include="module.activity4"></div>
+				<br />
+				<h2>{{module.videosTitle}}</h2>
+				<hr />
+				<!-- <div class="row">
+					<div class="col-md-1 col-sm-1 col-xs-1">
+						<a ng-click="prevVideo()" style="text-align:center">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1">
+						<a ng-click="nextVideo()">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					<div>
+						<h2>{{video.name}}</h2>
+						<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+							<center>
+							<iframe allowfullscreen="" ng-src="{{carouselUrl}}" frameborder="0"></iframe>
+						</center>
+						</div>
+					</div>
+				</div> -->
+				<div class="row">
+					<div class="col-sm-6 col-md-4" ng-repeat="vid in videos">
+						<a ng-click="openV(vid)" class="gallerypic">
+							<img ng-src="http://i.ytimg.com/vi/{{vid.id}}/0.jpg" height="90" width="140"></img>
+							<span class="play-icon"><span class="glyphicon glyphicon-play-circle"></span></span>
+						</a>
+<!-- 						<div class="thumbnail">
+							<img ng-src="http://i.ytimg.com/vi/{{vid.id}}/0.jpg" ng-click="openV()"></img>
+							<div class="caption">
+								<h3>{{vid.name}}</h3>
+								<button class="btn" ng-click="openV(vid)">hey</button>
+							</div>
+						</div> -->
+					</div>
+				</div>
+
+				<div ng-show="module.finalActivity">
+					<br />
+					<h2>تطبيق</h2>
+					<hr />
+					<div class="finalactivity">
+						<div ng-bind-html="finalActivity"></div>
+					</div>
+					<div class="highlight" ng-show="module.finalActivity.words">
+						{{module.finalActivity.words}}
+					</div>
+				</div>
+
+				<div ng-show="module.lastvideotitle">
+					<br/>
+					<hr/>
+					<div class="well lastvideo">
+						<h2>{{module.lastvideotitle}}</h2>
+						<hr />
+						<div class="row">
+							<div class="col-md-10 col-sm-10 col-xs-10">
+								<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+									<center>
+										<iframe allowfullscreen="" ng-src="{{lastVideoURL}}" frameborder="0"></iframe>
+									</center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<hr/>
+				<h3>روابط</h3>
+				<div class="row">
+					<a ng-href="{{homeUrl}}" target="blank"><span class="typcn typcn-home-outline" id="homepage"></span></a>
+					<a ng-href="http://facebook.com/{{lesson.facebook}}" target="blank"><span class="typcn typcn-social-facebook-circular" id="facebook"></span></a>
+					<a ng-href="http://www.last.fm/music/{{lesson.lastfm}}" target="blank"><span class="typcn typcn-social-last-fm-circular" id="lastfm" ng-show="lesson.lastfm"></span></a>
+					<a ng-href="http://twitter.com/{{lesson.twitter}}" target="blank"><span class="typcn typcn-social-twitter-circular" id="twitter"></span></a>
+					<a ng-href="http://youtube.com/user/{{lesson.youtube}}" target="blank"><span class="typcn typcn-video" id="youtube"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

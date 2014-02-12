@@ -1,0 +1,376 @@
+<nav class="navbar navbar-default navbar-fixed-top bs-navbar" data-offset-top="50" id="navbar-main" role="navigation">
+	<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav" bs-scrollspy-list>
+      <li><a href="#/#browse">Browse Modules</a></li>
+      <li><a href="#/#why">Why Khallina</a></li>
+      <li><a href="#/#about">About Us</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div role="main">
+	<div class="banner2" ng-style="{'background-image':'url(/images/ignore/mashrou3banner.jpg)'}">
+		<div class="wrapper2">
+			<div class="module-name"><font color="white">مشروع ليلى</font></div>
+		</div>
+	</div>
+	<nav class="navbar navbar-module" role="navigation">
+		<div class="container-fluid demo-font">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+		      	<a class="navbar-brand" href="#">khallina</a>
+		  	</div>
+		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right nav-module">
+		      	<li class="{active: isActive('links')}"><a href="#/demo#links" ng-click="goTo('links')">مصادر +</a></li>
+		      	<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">أخرى <b class="caret"></b></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#/demo#handson" ng-click="goTo('handson')">تطبيق</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#/demo#vocab" ng-click="goTo('vocab')">مفردات</a></li>
+		            <li><a href="#/demo#grammar" ng-click="goTo('grammar')">قواعد</a></li>
+		            <li><a href="#/demo#dialect" ng-click="goTo('dialect')">عامية</a></li>
+		          </ul>
+		        </li>
+		        <li ng-class="{active: isActive('4')}"><a href="#/demo#4" ng-click="goTo('4')">الرابع</a></li>
+		        <li ng-class="{active: isActive('3')}"><a href="#/demo#3" ng-click="goTo('3')">الثالث</a></li>
+		        <li ng-class="{active: isActive('2')}"><a href="#/demo#2" ng-click="goTo('2')">الثاني</a></li>
+		        <li ng-class="{active: isActive('1')}"><a href="#/demo#1" ng-click="goTo('1')">الأول</a></li>
+		        <li ng-class="{active: isActive('intro')}"><a href="#/demo#intro" ng-click="goTo('intro')">المقدمة</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+
+	<div class="container-fluid" ng-show="loc==='intro'">
+		<div class="row">
+			<alert class="eng" ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<img ng-src="images/Icon-Mashrou-Leila-Icon-Advanced.jpg" class="img-rounded img-responsive" />
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="well eng">
+					<p>Mashrou' Leila is a Lebanese alternative rock band who rose to international fame from beginning as a student music workshop. The band deals with different aspects of society that are normally unaddressed in traditional Arabic songs such as lost love, war, politics, materialism, immigration and homosexuality. Their music is very distinguished by experimentation with different instruments such as violin and megaphone, and does not follow traditional Arabic music tempo.</p>
+					<p><strong>You will learn the following in this module:</p>
+					<ul>
+						<li>Mashrou’ Leila songs</li>
+						<li>Alternative Arabic music </li>
+						<li>How Mashrou’ Leila started </li>
+						<li>Songs and music vocabulary </li>
+						<li>Narration and command form </li>
+						<li>Present tense in Spoken Arabic </li>
+						<li>Expressing desire in Spoken Arabic</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='1'" ng-swipe-right="goTo('2')">
+		<div class="row">
+			<h1 class="oxblood">خلينا نشوف الفيديو</h1>
+			<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+				<center>
+				<iframe allowfullscreen="" ng-src="//youtube.com/embed/6HqHdBlQEe8" frameborder="0" src="//youtube.com/embed/6HqHdBlQEe8"></iframe>
+			</center>
+			</div>
+		</div>
+		<div class="row">
+			<h1 class="oxblood">خلينا نقرأ كلمات الأغنية</h1>
+			<div class="well">
+				<table class="table demo-font">
+					<tr>
+						<td>Remember when you told me, that you were going to marry me <br/>Without money or a house</td>
+						<td>اتذكري لما قلتيلي إنك رح تتزوجيني بلا فلوس وبلا بيت</td>
+					</tr>
+					<tr>
+						<td>Remember how you used to love me, even though I’m outside of your religion<br/>Remember how we used to be like that</td>
+						<td>تتذكري كنتي تحبيني مع اني مش داخل دينك تذكري كيف كنا هيك<br/>كيف كنا هيك</td>
+					</tr>
+					<tr>
+						<td>Remember when your mother saw me sleeping in your bed<br/>Told me to forget about you</td>
+						<td>اتذكري لما إمك شافتني نايم بتختك قالتلي إنسى عنك</td>
+					</tr>
+					<tr>
+						<td>And we agreed to stay like that, without roles or rhetoric/ persuasion<br/>Without neckties and <a popover-trigger="mouseenter" popover-title="صُبحيّة" popover="SobHiyye is when people, usually women, gather in the morning to drink tea or coffee">morning visits</a><br/>Without millions<br/>Without dresses</td>
+						<td>واتفقنا نضلنا هيك بلا أدوار وطنطنات بلا كرافات و<a popover-trigger="mouseenter" popover-title="صُبحيّة" popover="SobHiyye is when people, usually women, gather in the morning to drink tea or coffee">صبحيات</a><br>بلا ملايين بلا فساتين</td>
+					</tr>
+					<tr>
+						<td>You held my hand and promised me a revolution<br/>How could you forget, how could you forget me</td>
+						<td>مسكتيلي ايدي ووعدتيني بشي ثورة كيف نسيتي كيف نسيتيني</td>
+					</tr>
+					<tr>
+						<td>And you combed my hair and sent me off on time<br/>Comb me the way you comb yourself</td>
+						<td>ومشطتيلي شعري وبعتيني عالدوام كيف بتمشطي مشطيني</td>
+					</tr>
+					<tr>
+						<td>You held my hand and promised me a revolution<br/>How could you forget, how could you forget me</td>
+						<td>مسكتيلي ايدي ووعدتيني بشي ثورة كيف نسيتي كيف نسيتيني</td>
+					</tr>
+					<tr>
+						<td>Without millions</td>
+						<td>بلا ملايين</td>
+					</tr>
+					<tr>
+						<td>Remember when you told me, that you intend to leave me<br/>Without money or a house</td>
+						<td>اتذكري لما قلتيلي إنك ناوية تتركيني بلا فلوس بلا بيت</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='2'" ng-swipe-left="goTo('1')" ng-swipe-right="goTo('3')">
+		<div class="row">
+			<h1 class="oxblood">خلينا نقرأ المقالة</h1>
+			<div class="well">
+				<div class="flex-video hidden-xs">
+					<iframe frameborder="0" src="http://khallina.org/mashrou3%20laila%20TEXT.pdf"></iframe>
+				</div>
+				<div class="visible-xs">
+					<center>
+						<a class="btn btn-lg btn-default" target="blank" href="http://khallina.org/mashrou3%20laila%20TEXT.pdf">لماذا نحب مشروع ليلى</a>
+					</center>
+					<br/><br/>
+				</div>
+				<div class="btn-group">
+					<a class="btn btn-warning" ng-href="http://khallina.org/mashrou3%20laila%20TEXT.pdf" download="Article1.pdf" id="download_button" href="http://khallina.org/mashrou3%20laila%20TEXT.pdf"><span class="glyphicon glyphicon-download"></span> Download PDF</a>
+					<a class="btn btn-warning" ng-href="http://www.qadita.net/2011/07/25/لماذا-نحبّ-مشروع-ليلى؟-فراس-نعامنة/" target="blank" href="http://www.qadita.net/2011/07/25/لماذا-نحبّ-مشروع-ليلى؟-فراس-نعامنة/"><span class="glyphicon glyphicon-link"></span> Original Source</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h1 class="oxblood">خلينا نناقش هذه الأسئلة</h1>
+			<div class="well demo-font">
+				<h3>لماذا نحب "مشروع ليلى"؟</h3>
+				<ol>
+					<li>في الفقرة الأولى من المقالة هناك ثلاث عبارات ربما يعتبرها البعض غير عربية. هل بإمكانكم إيجادها؟</li>
+					<li>من أين جاءت الفرقة الموسيقية باسمها؟ وكيف تطوّر الاسم؟</li>
+					<li>أغاني "مشروع ليلى" تعبـّر عن هموم الشباب وتتناول مواضيع متنوّعة. ما بعض الأفكار التي تقدّمها الفرقة بشأن الموضوعات التالية؟
+						<dl>
+							<dd>أ - الزواج</dd>
+							<dd>ب - الطائفية</dd>
+							<dd>ت - الجنس</dd>
+						</dl>
+					</li>
+				</ol>
+				<p>(ارجعوا إلى كلمات أغنية "فساتين" وإلى المقالة ثم اكتبوا فقرة قصيرة حول كل من هذه الموضوعات)</p>
+				<ol>
+					<li>بماذا تتميز كلمات أغاني "مشروع ليلى" من وجهة نظركم؟</li>
+					<li>بماذا تتميز كلمات أغاني "مشروع ليلى" من وجهة نظركم؟</li>
+					<li>"مشروع ليلى" فرقة مـُصنـّفة على أنها تنتج <a tooltip="alternative music">الموسيقى البديلة</a> أو <a tooltip="experimental music">الموسيقى التجريبية</a>. في رأيكم، كيف تختلف الموسيقى البديلة أو التجريبية عن الأغاني التقليدية؟ وهل الموسيقى البديلة\التجريبية خاصة بفترة زمنيـّة معيـّنة؟ قدّموا بعض الأمثلة لتوضيح أفكاركم وقارنوا "مشروع ليلى" بفرق موجودة في بلدكم.</li>
+				</ol>
+				<br/>
+				<div class="row">
+					<a class="btn-warning btn" ng-href="http://khallina.org/mashrou3%20laila%20TEXT%20-%20QUESTIONS.pdf" download="Article Questions.pdf" href="http://khallina.org/mashrou3%20laila%20TEXT%20-%20QUESTIONS.pdf">Download PDF</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='3'" ng-swipe-left="goTo('2')" ng-swipe-right="goTo('4')">
+		<h1 class="oxblood">خلينا نتعرف على أعضاء الفرقة</h1>
+		<div class="flex-video widescreen" style="margin: 0 auto">
+			<iframe allowfullscreen="" ng-src="//www.youtube.com/embed/3ruRNsqDSlE" frameborder="0" src="//www.youtube.com/embed/3ruRNsqDSlE"></iframe>
+		</div>
+
+		<h1 class="oxblood">خلينا نناقش هذه الأسئلة</h1>
+		<div class="well">
+			<h3>1. أجيبوا على هذه الأسئلة (بالعربي!):</h3>
+			<dl class="demo-font">
+				<dd>أ - كيف بدأت الفرقة؟ شو أهمية كلمة "مشروع" بالنسبة لتاريخ الفرقة؟ </dd>
+				<dd>ب - ليش بيذكروا موضوع الثورة في المقابلة؟ </dd>
+				<dd>ج - عن شو عم بيحكوا لما بيقولوا “it’s very fake”؟</dd>
+				<dd>د - كيف يقول أعضاء الفرقة "to play an instrument" بالعامية اللبنانية؟ هل تعرفون كلمات أخرى بالعربية بنفس المعنى؟ 	<br/>لماذا يذكر أعضاء الفرقة اسم "ليلى"؟ وما أهميته في الثقافة العربية؟</dd>
+			</dl>
+			<h3>2. استمعوا مرة أخرى وأكملوا الفراغات:</h3>
+			<h3 class="text-warning">0:51 - 1:26</h3>
+			<form class="form-inline">
+				<p class="demo-font">
+					كنا تلاميذ بـ<span edit-in-place="answer1"></span> <span edit-in-place="answer2"></span> بـ<span edit-in-place="answer3"></span>، عم <span edit-in-place="answer4"></span> <span edit-in-place="answer5"></span> و"جيرافيك ديزاين" و<span edit-in-place="answer6"></span> إنه <span edit-in-place="answer7"></span> متل <span edit-in-place="answer8"></span> ورشة عمل <span edit-in-place="answer50"></span> لأنه بوقتها <span edit-in-place="answer9"></span> <span edit-in-place="answer10"></span>، يعني <span edit-in-place="answer51"></span> تبعنا <span edit-in-place="answer11"></span> <span edit-in-place="answer12"></span> <span edit-in-place="answer13"></span> <span edit-in-place="answer14"></span>، ووقتها الـparticular situation بـ<span edit-in-place="answer15"></span> ما <span edit-in-place="answer16"> <span edit-in-place="answer17"></span> ما كانت <span edit-in-place="answer18"></span> <span edit-in-place="answer19"></span>. وبلتشنا بالورشة كنا شي <span edit-in-place="answer20"></span> <span edit-in-place="answer21"></span> <a tooltip="in and out">فايتين طلاعين</a> عم <span edit-in-place="answer22"></span> jamming <span edit-in-place="answer23"></span> <span edit-in-place="answer24"></span>، كل واحد <span edit-in-place="answer25"></span> من background <span edit-in-place="answer26"></span> <span edit-in-place="answer27"></span>.
+				</p>
+			</form>
+			<h3 class="text-warning">5:49 - 6:00</h3>
+			<form class="form-inline">
+				<p class="demo-font">
+					كلنا يعني <span edit-in-place="answer27"></span> <span edit-in-place="answer28"></span> العربية، كلنا يعني تقريبا <span edit-in-place="answer29"></span> ذات <span edit-in-place="answer30"></span>، يعني ذات <span edit-in-place="answer31"></span> اليورة، إنه كلنا يعني <span edit-in-place="answer32"></span> <span edit-in-place="answer33"></span> <span edit-in-place="answer34"></span> ياللي <span edit-in-place="answer35"></span> <span edit-in-place="answer36"></span> <span edit-in-place="answer37"></span>.
+				</p>
+			</form>
+			<h3 class="text-warning">8:20 - 8:43</h3>
+			<form class="form-inline">
+				<p class="demo-font">
+					هو مش "البوم" technically، it's an EP هو بس خمس أغاني جداد وهن متل تكملة follow up للألبوم الأول إذا بدك، بس <span edit-in-place="answer38"></span> يعني. إذا الألبوم <span edit-in-place="answer39"></span> <span edit-in-place="answer40"></span> عم <span edit-in-place="answer41"></span> <span edit-in-place="answer42"></span> <span edit-in-place="answer43"></span> و<span edit-in-place="answer44"></span> عم <span edit-in-place="answer45"></span> ع<span edit-in-place="answer46"></span>، الألبوم التاني هو <span edit-in-place="answer47"></span> هـ<span edit-in-place="answer48"></span> ع<span edit-in-place="answer49"></span>.
+				</p>
+			</form>
+			<br/>
+			<a class="btn btn-warning">Download PDF</a>
+			<a class="btn btn-warning" ng-href="modules/mashrou3leila/Answer Key LISTENING.pdf" target="blank">Download Answer Key</a>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='4'" ng-swipe-left="goTo('3')">
+		<h1 class="oxblood">خلينا نسمع أغاني ثانية للفرقة</h1>
+		<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+			<center>
+			<iframe allowfullscreen="" frameborder="0" src="//youtube.com/embed/oViTA93ydQs"></iframe>
+		</center>
+		</div>
+		<br/>
+		<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+			<center>
+			<iframe allowfullscreen="" frameborder="0" src="//youtube.com/embed/Mczl-lyU_LY"></iframe>
+		</center>
+		</div>
+		<br/>
+		<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+			<center>
+			<iframe allowfullscreen="" frameborder="0" src="//youtube.com/embed/-gyENyztDl8"></iframe>
+		</center>
+		</div>
+		<br/>
+		<div class="flex-video widescreen" style="margin: 0 auto;text-align: center">
+			<center>
+			<iframe allowfullscreen="" frameborder="0" src="//youtube.com/embed/Qn3EFPOuEGM"></iframe>
+		</center>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='handson'">
+		<h1 class="oxblood">خلينا نعمل مشروع</h1>
+		<div class="well">
+			<h3>1. مشروع كتابة</h3>
+			<p class="demo-font">ما رأيكم في موسيقى وأغاني مشروع ليلى؟ هل هناك فرق موسيقية شبيهة في ثقافتكم؟ كيف تشبهها أو تختلف عنها؟ وما رأيكم في دور الموسيقى البديلة في المجتمع؟</p>
+			<h3>2. مشروع إعلامي</h3>
+			<p class="demo-font">تخيّلوا مقابلة على الراديو أو التلفزيون بين صحفي ومغني في فرقة موسيقية بديلة (حقيقية أو خيالية). مثـّلوا وسجّلوا المقابلة</p>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='vocab'">
+		<h1 class="oxblood">خلينا نعرف المفردات</h1>
+		<div class="well">
+			<div class="flex-video">
+				<iframe ng-src="modules/mashrou3leila/mindmap.jpg" frameborder="0"></iframe>
+			</div>
+			<br/>
+			<small class="demo-font">أضيفوا كلمات أخرى لخريطة المفردات هذه.</small>
+			<br/>
+			<br/>
+			<a class="btn btn-warning" target="blank" ng-href="modules/mashrou3leila/mindmap.jpg">Download PDF</a>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='grammar'">
+		<h1 class="oxblood">خلينا نعرف القواعد</h1>
+		<div class="well">
+			<h3>1. الفعل الأمر</h3>
+			<p class="demo-font">في أغنية "فساتين" هناك بعض أفعال الأمر، مثل: "اتذكري" و"مشطيني". خلينا نشوفها ونسمعها مرة تانية في الأغنية.<br/>إذا درستم الفعل الأمر من قبل، راجعوا القواعد. أما إذا كان الفعل الأمر جديد بالنسبة لكم، فادرسوه من الموقع التالي أو من أي كتاب آخر تحبونه.</p>
+			<br/>
+			<a class="btn btn-warning" target="blank" href="http://arabic.desert-sky.net/g_command.html#indir">Grammar Source</a>
+		</div>
+		<h1 class="oxblood">خلينا نكتب</h1>
+		<div class="well">
+			<p class="demo-font">الآن اكتبوا قصة قصيرة جدا تحاولون فيها استخدام نفس الأزمنة.</p>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='dialect'">
+		<h1 class="oxblood">خلينا نعرف العامية</h1>
+		<div class="well">
+			<h3>1. عمـ + بـ + فعل مضارع</h3>
+			<p class="demo-font eng">Like several other Arabic dialects, Levantine dialect adds the preposition بـ to present-tense verbs. The only difference is the addition of عمـ before بـ, which usually implies that the action is being done at the moment of speaking. The عمـ + بـ + فعل مضارع is also used in the past tense after كان, for example:<br/><span class="ara">هو يشتغل بالبانك</span> = <i>He works at the bank</i><br/><span class="ara">هو عمبيشتغل بالبانك</span> = <i>He is working at the bank right now</i><br/><span class="ara">هو كان عمبيشتغل بالبانك</span> = <i>He was working at the bank</i></br></p><h3>2. بَد + ضمير</h3><p class="demo-font eng">In Levantine Arabic, we use بَد with a possessive pronoun in order to express want, wish, or desire. The word بد is followed by a possessive pronoun suffix to denote who the subject is.</p><table class="table"><tr><td>أنا</td><td>بد + ي = بَدّي</td><td>هو</td><td>بد + ه = بَدّْه</td></tr><tr><td>أنت</td><td>بد + ك = بدُك</td><td>هي</td><td>بد + ها = بَدّها</td></tr><tr><td>أنت</td><td>بد + ك = بَدّك</td><td>هم</td><td>بد + هُن = بَدّهُن</td></tr><tr><td>أنتم</td><td>بد + كْن = بَدّكْن</td><td>نحن</td><td>بد + نا = بَدنا</td></tr></table><br/>
+		</div>
+	</div>
+
+	<div class="container-fluid" ng-show="loc==='links'">
+		<h1 class="oxblood">خلينا نستكشف أكثر</h1>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<ul class="media-list demo-font">
+					<li class="media eng">
+						<a class="pull-right" href="http://mashrou3leila.com">
+							<img class="media-object img-responsive" ng-src="modules/mashrou3leila/homepage.png" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">The band's official website</h4>
+						</div>
+					</li>
+					<li class="media eng">
+						<a class="pull-right" href="http://www.last.fm/music/mashrou3+leila">
+							<img class="media-object img-responsive" ng-src="modules/mashrou3leila/lastfm.png" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">LastFM</h4>
+							Contains a list of their songs and recommendations for similar musicians.
+						</div>
+					</li>
+					<li class="media eng">
+						<a class="pull-right" href="http://www.facebook.com/mashrou3leila">
+							<img class="media-object img-responsive" ng-src="modules/mashrou3leila/facebook.png" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Facebook</h4>
+							Like the band's page and receive their updates.
+						</div>
+					</li>
+					<li class="media eng">
+						<a class="pull-right" href="http://www.twitter.com/mashrou3leila">
+							<img class="media-object img-responsive" ng-src="modules/mashrou3leila/twitter.png" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Twitter</h4>
+							Follow the band for their latest news.
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<ul class="demo-font">
+					<li class="media eng">
+						<a class="pull-right" href="https://itunes.apple.com/us/artist/mashrou-leila/id403493962">
+							<img class="media-object img-responsive" ng-src="modules/mashrou3leila/itunes.png" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">iTunes</h4>
+							Purchase their songs directly from iTunes.
+						</div>
+					</li>
+					<li class="media eng">
+						<a class="pull-right" href="http://youtube.com/user/Mashrou3Leila">
+							<img class="media-object img-responsive" ng-src="modules/mashrou3leila/youtube.png" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">YouTube</h4>
+							Watch their music videos.
+						</div>
+					</li>
+					<li class="media eng">
+						<a class="pull-right" href="http://lyricstranslate.com/en/%E2%80%8F-%E2%80%8F%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D9%8A%D9%84%D9%89mashrou-leila-lyrics.html">
+							<img class="media-object img-responsive" ng-src="modules/mashrou3leila/lyrics.png" />
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Lyrics Translate</h4>
+							Learn about their song lyrics and translations.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

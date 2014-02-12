@@ -1,0 +1,32 @@
+{
+	"title": "ثورة ٢٥ يناير",
+	"id": "egyptrevolution",
+	"banner": "egyptrevolution/egypt.jpg",
+	"facebook": "cairokee",
+	"intro": "The Egyptian Revolution initially began as a protest—coinciding with the National Police Day on January 25, 2011—with citizens speaking out against police brutality and abuses. The protest rapidly evolved into massive demonstrations in which millions of Egyptians from all socio-economic and religious backgrounds rallied for 17 days until overthrowing Hosni Mubarak's regime. Today, Egyptians are still striving and struggling to achieve the political, social, and economical demands of their Revolution.",
+	"advanced": {
+		"video1": "//youtube.com/embed/rYoCS7i0SIg",
+		"wordsHtml": "modules/egyptrevolution/Ethbat Makanak.html",
+		"vocabMap": "modules/egyptrevolution/Vocab Map REVOLUTION 25 JAN.pdf",
+		"video2": {
+			"title": "دلوقت خلينا نشوف أحلام الشباب المصري بالنسبة لبلدهم",
+			"url": "//youtube.com/embed/ZQOG27iZRmk",
+			"after": "ازاي بتختلف الأحلام دي عن الأسباب اللي شفناها بتؤدي إلى ثورة شعبية؟"
+		},
+		"article1": {
+			"htmlinstructions": "modules/egyptrevolution/intro.html",
+			"author": "علاء الأسواني",
+			"url": "/modules/egyptrevolution/Alaa El-Aswani article EDITED FINAL VERSION.pdf",
+			"title": "حوار بين شاب ثوري ومواطن طيب"
+		},
+		"activity2": "modules/egyptrevolution/activity2.html",
+		"video3": {
+			"title": "بعد أكتر من سنتين على بداية الثورة، كتير من مطالب المصريين ما زالت قائمة. خلينا نسمع التقرير الصحفي ده"
+		},
+		"finalActivity": {
+			"instructions": "تخيـّلوا أنكم مرشحاً سياسياً للرئاسة في دولة عربية ما. قدّموا برنامجكم الانتخابي ورؤيتكم لمستقبل أفضل. سجـّلوا الحملة الإعلانية، على ألا يقل الفيديو عن 5-8 دقائق، وشاركونا فيه."
+		},
+		"dialect": "modules/egyptrevolution/dialect.html",
+		"grammar": "modules/egyptrevolution/grammar.html"
+	}
+}

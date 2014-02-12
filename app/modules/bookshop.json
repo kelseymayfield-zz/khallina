@@ -1,0 +1,46 @@
+{
+	"title": "مكتبة في فلسطين",
+	"id": "bookshop",
+	"intro": "Reading culture changes from place to place, and is affected by a number of factors like the education levels of the residents and the political climate of the area. Here we delve into the complexity of reading culture in the occupied Palestinian territories, and highlight one particular bookshop in Jerusalem, The Educational Bookshop, which provides a place to attend lectures, enjoy a coffee and find the latest books in both Arabic and English.",
+	"banner": "bookshop/bookshop.png",
+	"thumbnail": "bookshop/bookshop.jpg",
+	"advanced": {
+		"video1": "//youtube.com/embed/GDqZ0dBbXLQ",
+		"article1": {
+			"instructions": "خلينا نقرأ هذه الققرة عن حال القراءة في العالم العربي:",
+			"url": "modules/bookshop/Brief Report Reading Situation.pdf",
+			"author": "د. ناصر جاسر االأغا",
+			"title": "واقع القراءة في الوطن العربي"
+		},
+		"activity2": "modules/bookshop/activity2.html",
+		"video3": {
+			"title": "هلأ خلينا نشوف نموذج لمكتبة حديثة في القدس",
+			"url": "//youtube.com/embed/qBTO6T7EN6A",
+			"questions": [
+				"ما هي ثلاثة اختلافات وثلاثة تشابهات بين المكتبة التي تخيلتها والمكتبة العلمية في القدس؟"
+			]
+		},
+		"activity3": "modules/bookshop/listening.html",
+		"vocabMap": "modules/bookshop/VOCAB MAP Bookshop in Palestine.pdf",
+		"videosTitle": "فيديوهات أخرى",
+		"videos": [
+			{
+				"id": "BySRCpauSds",
+				"url": "//youtube.com/embed/BySRCpauSds"
+			},
+			{
+				"id": "4-CcVazyPyg",
+				"url": "//youtube.com/embed/4-CcVazyPyg"
+			},
+			{
+				"id": "tSvFRsoVk3s",
+				"url": "//youtube.com/embed/tSvFRsoVk3s"
+			}
+		],
+		"finalActivity": {
+			"instructions": "<p class=\"ara2\">خلينا نفكر في حملة إعلانية لتشجيع الشباب في بلد عربي (من اختيارك) على القراءة أكثر. صمموا إعلان بصري أو سجلوا إعلان راديو\\فيديو. (يمكنكم إرساله لنا هنا وسوف نختار أفضل إعلان ونضعه على موقعنا)</p>"
+		},
+		"dialect": "modules/bookshop/dialect.html",
+		"grammar": "modules/bookshop/grammar.html"
+	}
+}

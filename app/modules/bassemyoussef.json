@@ -1,0 +1,52 @@
+{
+	"title": "باسم يوسف",
+	"id": "bassemyoussef",
+	"banner": "bassemyoussef/Bassem-Youssef-Banner.jpg",
+	"intro": "An Egyptian cardiac surgeon turned political satirist, Bassem Youssef became famous after the January 25 Revolution when his Youtube channel, “B+,” became an internet hit. Bassem Youssef is one of the most influential media personalities in the Arab World. His sharp satirical criticisms of the issues in the Middle East prompt important social and political dialogue in the Middle East.",
+	"advanced": {
+		"video1title": "The Daily Show with Jon Stewart",
+		"video1": "//player.vimeo.com/video/79730541",
+		"activity1": {
+			"instructions": "خلينا نكتب مقالة صحفية عن هذه المقابلة وخلينا نركز على أهم الموضوعات التي تم مناقشتها من وجهة نظركم"
+		},
+		"activity3": "modules/bassemyoussef/activity3.html",
+		"video3": {
+			"title": "والآن خلينا نسمع الأستاذة هبة الله سلام بتقول إيه:",
+			"url": "//vimeo.com/embed/83410270"
+		},
+		"activity4": "modules/bassemyoussef/activity4.html",
+		"article1": {
+			"instructions": "والآن خلينا نشوف الخبر الحقيقي الذي نُشر في موقع \"مصراوي\"، وخلينا نشوف الاختلافات في الموضوعات اللي تم ذكرها في المقالتين.",
+			"title": "الإعلامي الساخر باسم يوسف مع الإعلامي جون ستيوارت",
+			"author": "نورهان سراج",
+			"url": "http://www.khallina.org/res/Summary%20Article%20BASSEM%20YOUSEF.pdf",
+			"source": "http://www.masrawy.com/news/egypt/politics/2012/june/22/5126987.aspx"
+		},
+		"article2": {
+			"instructions": "خلينا نقرأ مقالة عن الفكاهة في المجتمع المصري:",
+			"title": "هل تستطيع الفكاهة تغيير مصر؟",
+			"author": "مارك بيترسون",
+			"url": "http://www.khallina.org/res/Can%20Humor%20Change%20Masr%20ARTICLE.pdf",
+			"source": "http://www.alwasatnews.com/3647/news/read/698180/1.html"
+		},
+		"articleQuestions": [
+			"كيف تغيّر الإعلام الاجتماعي أيناء الثورة المصرية؟",
+			"كيف تطوّر برنامج باسم يوسف حسب المقالة؟",
+			"ما دور الفكاهة في رأي الأستاذة هبة الله سلام؟",
+			"الآن استمعوا إلى رأي الأستاذة هبة الله سلام فيما يخص دور الفكاهة في الربيع العربي المصري."
+		],
+		"vocabMap": "modules/bassemyoussef/Mind Map Bassem Youssef.pdf",
+		"videos": [
+			{
+				"url": "//youtube.com/embed/AdQMm7OO0gI",
+				"id": "AdQMm7OO0gI"
+			},
+			{
+				"url": "//youtube.com/embed/wkCtJCW6koo",
+				"id": "wkCtJCW6koo"
+			}
+		],
+		"grammar": "modules/bassemyoussef/grammar.html",
+		"dialect": "modules/bassemyoussef/dialect.html"
+	}
+}

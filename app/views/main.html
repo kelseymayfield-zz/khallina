@@ -1,0 +1,172 @@
+<div class="container-fluid ara">
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+			<div class="row">
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<a ng-click="scrollTo(randLessons[0], 'demo')" href=""><img class="img-responsive gridpic" ng-src="{{randLessons[0].imageUrl}}" /></a>
+				</div>
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[1].imageUrl}}" />
+				</div>
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[2].imageUrl}}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[3].imageUrl}}" />
+				</div>
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[4].imageUrl}}" />
+				</div>
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[5].imageUrl}}" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[6].imageUrl}}" />
+				</div>
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[7].imageUrl}}" />
+				</div>
+				<div class="col-sm-4 col-xs-4 col-md-4 col-lg-4">
+					<img class="img-responsive gridpic" ng-src="{{randLessons[8].imageUrl}}" />
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-6 col-lg-6 block vcenter">
+			<div id="pageHead">
+				<img src="images/ignore/khallina logo.png" style="width:250px;height:auto" />
+				<br/>
+				<p class="lead eng">An open source website for teaching and studying Arab culture.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default bs-navbar navbar-fixed-top" bs-affixt data-offset-top="50" id="navbar-main" role="navigation">
+	<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav" bs-scrollspy-list>
+      <li><a href="#browse">Browse Modules</a></li>
+      <li><a href="#why">Why Khallina</a></li>
+      <li><a href="#about">About Us</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="container ara bs-docs-main">
+	<div id="browse" class="row">
+		<div id="demo" ng-show="demo">
+			<div class="row">
+				<img class="col-md-6 col-lg-6" ng-src="modules/{{demo.banner}}" />
+				<div class="col-md-6 col-lg-6">
+					<div class="panel panel-default eng">
+						<div class="panel-heading">{{demo.title}}</div>
+						<div class="panel-body">
+							<div class="dropdown pull-right" style="display:block">
+								<a class="dropdown-toggle">{{demo.level}} <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li ng-show="demo.beginner"><a ng-click="demo.level='Beginner'">Beginner</a></li>
+									<li ng-show="demo.intermediate"><a ng-click="demo.level='Intermediate'">Intermediate</a></li>
+									<li ng-show="demo.advanced"><a ng-click="demo.level='المتقدم'">المتقدم</a></li>
+								</ul>
+							</div>
+							<br/>
+							{{demo.intro}}
+							<br/>
+							<br/>
+							<a class="btn btn-primary" ng-href="#/module/{{demo.id}}/advanced" ng-show="demo.level==='المتقدم'">Start</a>
+							<a class="btn btn-primary" ng-href="#/module/{{demo.id}}/intermediate" ng-show="demo.level==='Intermediate'">Start</a>
+							<a class="btn btn-primary" ng-href="#/module/{{demo.id}}/beginner" ng-show="demo.level==='Beginner'">Start</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>
+
+		<div class="row">
+			<div class="col-md-4 col-lg-4">
+				<div class="panel panel-primary eng nav-green">
+					<div class="panel-heading">Beginner</div>
+					<ul class="nav nav-pills nav-stacked" ng-repeat="lesson in beginner">
+						<li><a href="" ng-click="changeDemo(lesson)">{{lesson.title}}</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-4">
+				<div class="panel panel-primary eng nav-green">
+					<div class="panel-heading">Intermediate</div>
+					<ul class="nav nav-pills nav-stacked" ng-repeat="lesson in intermediate">
+						<li><a href="" ng-click="changeDemo(lesson)">{{lesson.title}}</a></li>		
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-4">
+				<div class="panel panel-primary ara nav-green" style="font-size:18px">
+					<div class="panel-heading">المتقّدم</div>
+					<ul class="nav nav-pills nav-stacked ara2" ng-repeat="lesson in advanced">
+						<li><a href="" ng-click="changeDemo(lesson)">{{lesson.title}}</a></li>		
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</div>
+
+	<div id="why">
+		<h1>WHY US</h1>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</div>
+
+	<div id="about">
+		<h1>About Us</h1>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</div>
+	
+	<br/>
+</div>

@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Calligraphy",
+		"id": "calligraphy",
+		"level": "Beginner"
+	},
+	{
+		"title": "Body Language",
+		"id": "bodylanguage",
+		"level": "Beginner"
+	},
+	{
+		"title": "Greetings",
+		"id": "greetings",
+		"level": "Beginner"
+	},
+	{
+		"title": "Palestine",
+		"id": "palestine",
+		"level": "Beginner"
+	},
+	{
+		"title": "Hummus",
+		"id": "hummus",
+		"level": "Beginner"
+	},
+	{
+		"title": "Famous Arabs",
+		"id": "famousarabs",
+		"level": "Beginner"
+	}
+]

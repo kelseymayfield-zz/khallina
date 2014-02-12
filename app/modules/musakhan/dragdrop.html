@@ -1,0 +1,14 @@
+<script src="modules/musakhan/dctrl.js"></script>
+
+<h3>خلينا نشوف إذا بنتذكـّر طبخة المسخن. رتـّبوا الخطوات:</h3>
+<br/>
+
+<div ng-controller="DCtrl as loki">
+	<ol data-drop="true">
+		<li ng-repeat="item in list1">
+			<div class="btn" data-drop="true" ng-model="list1" jqyoui-droppable="{index: {{$index}}, onDrop:'loki.dropCallback(item.title, $index)'}" data-jqyoui-options="{revert: 'invalid'}">
+				<div class="btn btn-info" data-drag="{{item.drag}}" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1"  jqyoui-draggable="{index: {{$index}},animate:true}">{{item.title}}</div>
+			</div>
+		</li>
+	</ol>
+</div>

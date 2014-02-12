@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="jumbotron" style="direction:ltr">
+		<h1>{{module.title}}</h1>
+		<small>{{module.intro}}</small>
+		<br/><br/>
+		Levels available for this module:<br />
+		<a class="btn btn-beginner" ng-show="module.beginner" ng-href="#/module/{{module.id}}/beginner">Beginner</a>
+		<a class="btn btn-intermediate" ng-show="module.intermediate" ng-href="#/module/{{module.id}}/intermediate">Intermediate</a>
+		<a class="btn btn-advanced" ng-show="module.advanced" ng-href="#/module/{{module.id}}/advanced">Advanced</a>
+	</div>
+</div>

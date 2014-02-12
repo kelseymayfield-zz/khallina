@@ -1,0 +1,22 @@
+{
+	"title": "الكوفية",
+	"id": "kufiyyeh",
+	"intermediate": {
+		"video1": "//youtube.com/embed/3SzVtVu-QV8",
+		"video1title": "خلينة نشوف كيف ممكن نلبس الكوفية",
+		"html": "modules/kufiyyeh/dragdrop.html",
+		"article1": {
+			"title": "الكوفية",
+			"author": "ويكيبيديا",
+			"url": "modules/kufiyyeh/Kufiyyeh definition wikipedia PDF.pdf"
+		},
+		"video3": {
+			"title": "خلينا نسمع أغنية عن الكوفية",
+			"url": "//www.youtube.com/watch?v=21OXQ4m1-Bo"
+		},
+		"article3": {
+			"title": "خلينا نقابل شادية منصور"
+		},
+		"listening": "modules/kufiyyeh/close listening.html"
+	}
+}

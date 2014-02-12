@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Kufiyyeh",
+		"id": "kufiyyeh",
+		"level": "intermediate"
+	},
+	{
+		"title": "Tabbouleh",
+		"id": "tabbouleh",
+		"level": "intermediate"
+	},
+	{
+		"title": "Ramadan",
+		"id": "ramadan",
+		"level": "intermediate"
+	},
+	{
+		"title": "Hajj",
+		"id": "hajj",
+		"level": "intermediate"
+	},
+	{
+		"title": "Jokes",
+		"id": "jokes",
+		"level": "intermediate"
+	},
+	{
+		"title": "Rai Music",
+		"id": "rai",
+		"level": "intermediate"
+	}
+]

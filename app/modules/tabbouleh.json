@@ -1,0 +1,17 @@
+{
+	"title": "التبولة",
+	"id": "tabbouleh",
+	"banner": "tabbouleh/tabbouleh.jpg",
+	"intermediate": {
+		"video1": "//youtube.com/embed/1FaNzrtu0KM",
+		"video2": {
+			"title": "خلينا نشوف وصف التبولة",
+			"url": "//youtube.com/embed/XglgnMuu-i0"
+		},
+		"html": "modules/tabbouleh/recipe.html",
+		"video3": {
+			"title": "خلينا نشوف نفس الوصفة بالإنجليزي. يمكن فيها شيء مختلف!",
+			"url": "//youtube.com/embed/XkSCI07BftM"
+		}
+	}
+}

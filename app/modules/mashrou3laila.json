@@ -1,0 +1,75 @@
+{
+	"title": "مشروع ليلى",
+	"id": "mashrou3laila",
+	"banner": "mashrou3leila/mashrou3leila.jpg",
+	"intro": "Mashrou' Leila is a Lebanese alternative rock band who rose to international fame from beginning as a student music workshop. The band deals with different aspects of society that are normally unaddressed in traditional Arabic songs (lost love, war, politics, materialism, immigration and homosexuality). Their music is very distinguished by experimentation with different instruments such as violin and megaphone, and does not follow traditional Arabic music tempo.",
+	"facebook": "mashrou3leila",
+	"lastfm": "mashrou3+leila",
+	"twitter": "mashrou3leila",
+	"youtube": "Mashrou3Leila",
+	"homepage": "http://mashrou3leila.com",
+	"advanced": {
+		"video1title": "فساتين",
+		"video1": "//youtube.com/embed/6HqHdBlQEe8",
+		"words" : "modules/mashrou3leila/fasateen.html",
+		"listening": "modules/mashrou3leila/mashrou3 leila close listening.html",
+		"listeningSolutions": "modules/mashrou3leila/Answer Key LISTENING.pdf",
+		"listeningQuestions": "https://docs.google.com/file/d/0B11lYDUUtiT_dGFxTU1vcmN2Umc/edit",
+		"video3": {
+			"title": "خلينا نتعرف على أعضاء الفرقة",
+			"url": "//www.youtube.com/embed/3ruRNsqDSlE",
+			"questions": [
+				"شاهدوا واستمعوا إلى هذه المقابلة مع أعضاء فرقة \"مشروع ليلى\".<br /><span class=\"label label-warning\">مهم</span> استمعوا إلى الفيديو مرتين أو ثلاثة على الأقل قبل الإجابة عن الأسئلة التالية",
+				"أجيبوا على هذه الأسئلة (بالعربي!):<ol class=\"upper-roman\"><li>كيف بدأت الفرقة؟ شو أهمية كلمة \"مشروع\" بالنسبة لتاريخ الفرقة؟</li><li>ليش بيذكروا موضوع الثورة في المقابلة؟</li><li>عن شو عم بيحكوا لما بيقولوا \"it's very fake\"؟</li><li>كيف يقول أعضاء الفرقة \"to play an instrument\" بالعامية اللبنانية؟ هل تعرفون كلمات أخرى بالعربية بنفس المعنى؟</li></ol>"			]
+		},
+		"activity1": {
+			"instructions": "اقرأوا كلمات أغنية \"فساتين\" وتخيّلوا قصة كاملة تكتبونها. تخيّلوا أسماء الشخصيات وتفاصيل قصة الحب، ثم اكتبوا قصة كاملة بأسلوب أدبي جميل أو مثلوها في الصف أمام زملائكم"
+		},
+		"article1": {
+			"instructions": "",
+			"title": "لماذا نحب مشروع ليلى",
+			"author": "فرس نعامنة",
+			"url": "http://khallina.org/mashrou3%20laila%20TEXT.pdf",
+			"source": "http://www.qadita.net/2011/07/25/لماذا-نحبّ-مشروع-ليلى؟-فراس-نعامنة/",
+			"questionUrl": "http://khallina.org/mashrou3%20laila%20TEXT%20-%20QUESTIONS.pdf"
+		},
+		"videosTitle": "أغاني أخرى للفرقة",
+		"videos": [
+			{
+				"url": "//youtube.com/embed/oViTA93ydQs",
+				"id": "oViTA93ydQs",
+				"name": "Habibi"
+			},
+			{
+				"url": "//youtube.com/embed/Mczl-lyU_LY",
+				"id": "Mczl-lyU_LY",
+				"name": "Shim el-Yasmine"
+			},
+			{
+				"url": "//youtube.com/embed/-gyENyztDl8",
+				"id": "-gyENyztDl8",
+				"name": "Imm el-Jacket"
+			},
+			{
+				"url": "//youtube.com/embed/Qn3EFPOuEGM",
+				"id": "Qn3EFPOuEGM",
+				"name": "Lil Watan"
+			}
+		],
+		"articleQuestions": [
+			"<p>في الفقرة الأولى من المقالة عبارتان حديثتان ربما يعتبرها البعض غير عربية. هل بإمكانكم إيجادها؟</p>",
+			"من أين جاءت الفرقة الموسيقية باسمها؟ وكيف تطوّر الاسم؟",
+			"أغاني \"مشروع ليلى\" تعبّر عن هموم الشباب وتتناول مواضيع متنوّعة. ما بعض الأفكار التي تقدّمها الفرقة بشأن الموضعات التالية؟<ol class=\"upper-roman\"><li>الزواج</li><li>الطائفية</li><li>الجنس</li></ol>(ارجعوا إلى كلمات أغنية \"فساتين\" وإلى المقالة ثم اكتبوا فقرة قصيرة حول كل من هذه الموضوعات)",
+			"بماذا تتميز كلمات أغاني \"مشروع ليلى\" من وجهة نظركم؟",
+			"\"مشروع ليلى\" فرقة مُصنّفة على أنها تنتج <a popover=\"alternative music\" popover-title=\"الموسثقى البلدية\" popover-placement=\"bottom\" popover-trigger=\"mouseenter\">الموسيقى البدلية</a> أو الموسيقى <a tooltip=\"experimental\">التجريبية</a>. في رأيكم، كيف تختلف الموسيقى البدلية أو التجريبية عن الأغاني التقليدية؟ وهل الموسيقى البدلية\\التجريبية خاصة بفترة زمنيّة معيّنة؟ قدّموا بعض الأمثلة لتوضيح أفكاركم."
+		],
+		"lastvideotitle": "مقابلة مع باسم يوسف",
+		"lastvideo": "//youtube.com/embed/vAQ-H8TOebU",
+		"vocabMap": "modules/mashrou3leila/mindmap.jpg",
+		"finalActivity": {
+			"instructions": "<p><ol class=\"ara2\"><li>ما رأيكم في موسيقى وأغاني مشروع ليلى؟ هل هناك فرقة موسيقية شبيهة في ثقافتكم؟ كيف تشبه مشروع ليلى أو تختلف عنها؟ (اكتبوا مقالة من 200 - 400 كلمة)</li><li>مع زملائكم في الصف أو في مشروع فيديو، مثلوا مقابلة بين صحفى ومغني في فرقة موسيقية بديلة.</li></ol></p>"
+		},
+		"dialect": "modules/mashrou3leila/dialect.html",
+		"grammar": "modules/mashrou3leila/grammar.html"
+	}
+}
